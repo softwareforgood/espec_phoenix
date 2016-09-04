@@ -1,13 +1,13 @@
 defmodule EspecPhoenix.Mixfile do
   use Mix.Project
 
-  @version "0.6.0"
+  @version "0.7.0"
 
   def project do
     [app: :espec_phoenix,
      name: "ESpec Phoenix",
      version: @version,
-     elixir: "~> 1.0",
+     elixir: "~> 1.3",
      description: description,
      package: package,
      deps: deps,
@@ -29,9 +29,9 @@ defmodule EspecPhoenix.Mixfile do
   defp deps do
     [
       {:espec, ">= 1.0.1"},
-      {:phoenix, ">= 1.0.0"},
-      {:ecto, ">= 1.0.0"},
-      {:ex_doc, ">= 0.0.0", only: :dev}
+      {:phoenix, ">= 1.2.1"},
+      {:ecto, ">= 2.0.4"},
+      {:ex_doc, ">= 0.13.0", only: :dev}
     ]
   end
 
